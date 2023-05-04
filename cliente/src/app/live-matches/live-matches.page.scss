@@ -1,0 +1,81 @@
+ion-card {
+    ion-card-header {
+        ion-card-title {
+            text-align: center;
+        }
+
+        ion-card-subtitle {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            .subtitle-left,
+            .subtitle-right {
+                margin: 0 10px;
+            }
+
+            .subtitle-left {
+                order: 1;
+            }
+
+            .subtitle-right {
+                order: 2;
+            }
+        }
+    }
+
+    ion-card-content {
+        .content-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .content-left,
+            .content-right {
+                flex: 1;
+                text-align: center;
+
+                .text-top,
+                .text-bottom {
+                    margin: 0;
+                }
+            }
+
+            .vs-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                z-index: 1;
+
+                .vs-text {
+                    font-size: 24px;
+                    font-weight: bold;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+
+            .middle-text {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    background-color: #ffff; //color de fondo de la tarjeta
+    padding: 10px; //añadir espacio alrededor de la tarjeta
+}
+.my-content {
+    --background: rgb(77,135,255);
+    --background: linear-gradient(90deg, rgba(77,135,255,1) 0%, rgba(180,194,223,1) 37%, rgba(93,103,186,1) 100%);;
+}

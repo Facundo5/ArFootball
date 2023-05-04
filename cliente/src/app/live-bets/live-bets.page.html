@@ -1,0 +1,17 @@
+<ion-content>
+  <ion-card *ngFor="let odd of odds">
+    <ion-card-header>
+      <ion-card-title>{{odd.name}}</ion-card-title>
+      <ion-card-subtitle>AAA</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-item *ngFor="let a of odd.values">
+          <ion-thumbnail slot="start">
+          </ion-thumbnail>
+          <ion-label>{{a.value}}</ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

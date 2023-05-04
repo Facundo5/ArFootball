@@ -1,0 +1,19 @@
+/* CSS */
+.custom-tab-bar {
+    background-color: #00cc99;
+    /* Color verde armonioso */
+    border-radius: 20px 20px 0 0;
+    /* Redondeado en la parte superior */
+    position: fixed;
+    /* Fijo en la parte inferior */
+    bottom: 0;
+    width: 100%;
+    /* Ancho del 100% de la pantalla */
+    z-index: 999;
+    /* Para que esté por encima del contenido */
+}
+
+.custom-tab-bar {
+    /* ... tus estilos personalizados ... */
+    z-index: 10; /* Reducir el valor de z-index */
+  }

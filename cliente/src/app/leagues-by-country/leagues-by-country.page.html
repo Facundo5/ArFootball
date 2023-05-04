@@ -1,0 +1,12 @@
+<ion-content class="my-content">
+  <ion-grid *ngFor="let league of leagues">
+    <ion-row>
+      <ion-col>
+        <div class="container">
+            <img src="{{this.league.league.logo}}" style="display:block; margin:auto;">
+            <p style="text-align:center">{{this.league.league.name}}</p>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

@@ -1,0 +1,29 @@
+<ion-content class="my-content">
+<ion-card *ngFor="let match of matches " class="mi-card" [routerLink]="['/live-bets', match.fixture.id]">
+  <ion-card-header text-center>
+    <ion-card-title class="title">{{match.fixture.status.elapsed}}'</ion-card-title>
+    <ion-card-subtitle>
+      <img class="subtitle-left" src="{{match.league.flag}}" width="50px" height="50px">
+      <div class="subtitle-right">{{match.league.country}}</div>
+    </ion-card-subtitle>
+  </ion-card-header>
+  <ion-card-content>
+    <div class="content-container">
+      <div class="content-left">
+        <img src="{{match.teams.away.logo}}" width="50px" height="50px" alt=""><img>
+
+        <div class="text-top">{{match.teams.away.name}}</div>
+        <div class="text-bottom">{{match.goals.away}}</div>
+      </div>
+      <div class="content-right">
+        <img src="{{match.teams.home.logo}}" width="50px" height="50px" alt=""><img>
+        <div class="text-top">{{match.teams.home.name}}</div>
+        <div class="text-bottom">{{match.goals.home}}</div>
+      </div>
+      <div class="middle-text">
+        VS
+      </div>
+    </div>
+  </ion-card-content>
+</ion-card>
+</ion-content>
